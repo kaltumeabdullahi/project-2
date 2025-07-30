@@ -1,11 +1,15 @@
 *{
   box-sizing: border-box;
+  
 }
 
 html, body {
   padding: 0;
   margin: 0;
   overflow: auto;
+  width: screen;
+  min-height: screen;
+  background-color: rgb(51, 35, 35);
 
 }
 
@@ -21,15 +25,14 @@ html, body {
   position: fixed;
 }
 .navbar img {
-  width: 48px;
-  height: 48px;
+  width: 70px;
+  height: 68px;
   
 }
 
 .navbar ul{
   display:flex ;
   flex-direction: row;
-  
   align-items: center;
   justify-content: center;
   gap: 30px;
@@ -44,11 +47,51 @@ html, body {
   
 }
 
+.hero {
+  padding: 120px 16px 0px 16px;
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(243, 172, 79);
+  height: 800px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-img {
+  width: 950px;
+  height: auto;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.hero-img img {
+  width: 100%;
+  height: auto;
+}
+
+.notes {
+ width: 400px;
+}
+
+.notes h1{
+  color: white;
+  font-size: 64px;
+}
+
+.notes p{
+  color: white;
+  font-size: 18px;
+}
+
+h1 span {
+  color: brown;
+}
+
 .pictures {
   padding-top: 120px;
   min-height: 500px;
   width: 100%;
-  
+
   display: grid;
   grid-template-columns: auto auto auto;
   padding: 120px 16px 0px 16px;
@@ -64,4 +107,35 @@ html, body {
   border-radius: 16px;
   object-fit: cover;
 }
+
+
+
+footer {
+  width: 100%;
+  text-align: center;
+  height: 250px;
+  background-color: blanchedalmond;
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+
+}
+
+.icons {
+  display: flex;
+  gap: 25px;
+}
+
+.icons img {
+  width: 32px;
+  height: auto;
+  border-radius: 16px;
+  object-fit: cover;
+
+}
+
+
 
