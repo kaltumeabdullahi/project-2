@@ -6,7 +6,16 @@ body {
   min-height: screen;
 }
 
-.about-text{
+.about-container {
+  width: 100%;
+  display: flex;
+  background-color: rgb(241, 178, 84);
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-text {
+  width: 1440px;
   display: flex;
   flex-direction: row;
   padding-top: 100px;
@@ -15,10 +24,6 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-  background-color: rgb(241, 178, 84);
-  padding-left: 20px;
-  padding-right: 20px;
-  
 }
 
 .about-text img {
@@ -32,12 +37,17 @@ p span {
   color: bisque;
 }
 
+.texts-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(244, 143, 10);
+  padding: 20px 0 0 20px;
+}
+
 .texts {
   height: 500px;
-  background-color: rgb(244, 143, 10);
+  width: 1440px;
   color: white;
   gap: 10px;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
 }
