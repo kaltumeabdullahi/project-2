@@ -1,37 +1,42 @@
-*{
+* {
   box-sizing: border-box;
-  
 }
 
-html, body {
+html,
+body {
   padding: 0;
   margin: 0;
   overflow: auto;
   width: screen;
   min-height: screen;
   background-color: rgb(51, 35, 35);
-
 }
 
-.navbar{
+.nav-container {
+  width: 100%;
+  position: fixed;
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar {
   display: flex;
   flex-direction: row;
   height: 100px;
   width: 100%;
-  background-color: antiquewhite;
   justify-content: space-between;
   align-items: center;
+  width: 1400px;
   padding: 0 16px 0 16px;
-  position: fixed;
 }
 .navbar img {
   width: 70px;
   height: 68px;
-  
 }
 
-.navbar ul{
-  display:flex ;
+.navbar ul {
+  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
@@ -39,27 +44,31 @@ html, body {
   height: inherit;
   margin: 0;
   width: fit-content;
-
 }
 
 .narvbar .buttons {
   display: flex;
-  
+}
+
+.hero-container {
+  width: 100%;
+  background-color: rgb(243, 172, 79);
+  display: flex;
+  justify-content: center;
+  padding-top: 120px;
 }
 
 .hero {
-  padding: 120px 16px 0px 16px;
   display: flex;
   flex-direction: row;
-  background-color: rgb(243, 172, 79);
-  height: 800px;
+  width: 1400px;
+  min-height: 800px;
   align-items: center;
   justify-content: space-between;
-  
 }
 
 .hero-img {
-  width: 450px;
+  width: 900px;
   height: auto;
   border-radius: 24px;
   overflow: hidden;
@@ -71,15 +80,15 @@ html, body {
 }
 
 .notes {
- width: 400px;
+  width: 380px;
 }
 
-.notes h1{
+.notes h1 {
   color: white;
   font-size: 64px;
 }
 
-.notes p{
+.notes p {
   color: white;
   font-size: 18px;
 }
@@ -88,17 +97,20 @@ h1 span {
   color: brown;
 }
 
-.pictures {
-  padding-top: 120px;
-  min-height: 500px;
+.pictures-container {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 
+.pictures {
+  min-height: 500px;
+  width: 1400px;
   display: grid;
   grid-template-columns: auto auto auto;
-  padding: 120px 16px 0px 16px;
   gap: 20px;
-  
-  
 }
 
 .pictures img {
@@ -108,8 +120,6 @@ h1 span {
   border-radius: 16px;
   object-fit: cover;
 }
-
-
 
 footer {
   width: 100%;
@@ -121,8 +131,6 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
-
 }
 
 .icons {
@@ -135,8 +143,4 @@ footer {
   height: auto;
   border-radius: 16px;
   object-fit: cover;
-
 }
-
-
-
